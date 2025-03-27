@@ -1,0 +1,214 @@
+body{
+    margin:0;
+    padding:30px;
+    background-color:rgb(165, 165, 8);
+display:block;
+color:white;
+
+}
+
+.loader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    transition: opacity 3.5s, visibility 3.5s;
+    animation: animate 1s linear infinite;
+}
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader::after{
+    content:"";
+    width:75px;
+    height: 75px;
+    border:15px solid black;
+    border-top-color:yellow;
+    border-radius:50%;
+    animation:loading 1s ease infinite;
+    transition: opacity 3.5s, visibility 3.5s;
+}
+@keyframes loading{
+    from{
+        transform: rotate(0turn);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+h4{
+    font-family:arial;
+    margin-top:30px;
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 1;
+    margin-left:100px;
+}
+.text-design{
+    text-decoration: underline;
+}
+.move-icon{
+    height:60px;
+    
+}
+.iconButton{
+    background-color:transparent;
+    border-radius:50%;
+    border:2px solid white;
+    padding:10px;
+    color:white;
+   margin-top:50px;
+   width:150px;
+   height:150px;
+}
+.shift-text{
+    font-size:20px;
+    font-family:arial;
+    font-weight:bold;
+    margin-left:200px;
+    margin-top:-40px;
+}
+p{
+    font-family:arial;
+    font-size:20px;
+    font-weight:bold;
+    margin-left:100px;
+}
+a{
+    text-decoration: none;
+    font-size:20px;
+    color:rgb(194, 194, 2);
+    font-family:arial;
+    text-align:center;
+    font-weight:bold;
+}
+.game-link{
+    border-radius:8px;
+    padding:20px;
+    background-color:black;
+    margin-left:500px;
+    border:1px solid black;
+    width:150px;
+    margin-top: 20px;
+}
+
+@media (max-width:476px){
+    body{
+        margin:0;
+        padding:20px;
+        background-color:rgb(165, 165, 8);
+    display:block;
+    color:white;
+    
+    }
+    
+    .loader{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100vw;
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:white;
+        transition: opacity 3.5s, visibility 3.5s;
+        animation: animate 1s linear infinite;
+    }
+    .loader-hidden{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .loader::after{
+        content:"";
+        width:75px;
+        height: 75px;
+        border:15px solid black;
+        border-top-color:yellow;
+        border-radius:50%;
+        animation:loading 1s ease infinite;
+        transition: opacity 3.5s, visibility 3.5s;
+    }
+    @keyframes loading{
+        from{
+            transform: rotate(0turn);
+        }
+        to{
+            transform: rotate(1turn);
+        }
+    }
+    
+    h4{
+        font-family:arial;
+        margin-top:30px;
+        font-size:15px;
+        font-weight:bold;
+        text-align:none;
+    }
+    .grid{
+        display:grid;
+        grid-template-columns: 1;
+        margin-left:0;
+    }
+    .text-design{
+        text-decoration: underline;
+    }
+    .move-icon{
+        height:60px;
+        
+    }
+    .iconButton{
+        background-color:transparent;
+        border-radius:50%;
+        border:2px solid white;
+        padding:10px;
+        color:white;
+       margin-top:50px;
+       width:100px;
+       height:100px;
+    }
+    .shift-text{
+        font-size:20px;
+        font-family:arial;
+        font-weight:bold;
+        margin-left:150px;
+        margin-top:-40px;
+    }
+    p{
+        font-family:arial;
+        font-size:20px;
+        font-weight:bold;
+        margin-left:0;
+    }
+    a{
+        text-decoration: none;
+        font-size:20px;
+        color:rgb(194, 194, 2);
+        font-family:arial;
+        text-align:center;
+        font-weight:bold;
+    }
+    .game-link{
+        border-radius:8px;
+        padding:20px;
+        background-color:black;
+        margin-left:100px;
+        border:1px solid black;
+        width:150px;
+        margin-top: 20px;
+    }
+    
+    
+    
+}
